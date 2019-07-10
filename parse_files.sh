@@ -1,3 +1,4 @@
+mkdir -p out
 rm out/*
 for f in prob_obs_txt.n_word.frq_NO_bh.csv TT_freq.csv neg_king_james_36500.freq neg_TT_scrambled_no_vms_36500.freq
 do

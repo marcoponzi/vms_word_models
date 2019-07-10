@@ -7,7 +7,8 @@ bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3
 
             
 
-r1: PREF_Y  bench_e oayu |  PREF_Y  BENCH oayu | bench_e oayu | BENCH oayu | S O  |  Q O | oay 
+r0: S O  |  Q O | oay
+r1: r0  bench_e oayu |  r0  BENCH oayu | bench_e oayu | BENCH oayu |  r0
 
 oayu: O | Y | u
 

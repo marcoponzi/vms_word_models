@@ -1,0 +1,35 @@
+
+start: bodies | bodies coda
+
+
+bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3
+            
+
+r1: "cheeo" | "chee" yu | "cheo" | "che" yu | "cho" | "ch" yu |"qo" | "o" |  Y | "shee" yu  | "sheo" 
+    | "she" yu | "sho" | "sh" yu | "so"
+
+r2: "ckhe" yu | "ckh" yu | "cthe" yu | "ctho" | "cth" yu | "do" | "lo" | "ro" | "s" Y | "ee" yu | "kche" yu | "kcho" | "kch" yu | "keee" yu | "keeo" | "kee" yu | "keo" | "ke" yu | "ko" | "kshe" yu | "ksh" yu | "k" Y | "lche" yu | "lch" yu | "lkee" yu | "lk" Y | "lshe" yu | "pche" yu | "pcho" | "pch" yu | "po" | "p" Y | "tcheo" | "tche" yu | "tcho" | "tch" yu | "teeo" | "tee" yu | "teo" | "te" yu | "to" | "t" Y
+
+r3: "d" Y | "ld" Y | "l" Y | "r" Y
+
+Y: "y" | "a"
+yu: Y | u
+
+u: U  | 
+U: "xxx"
+
+
+coda: L coda_1 L |  L coda_1 | coda_1 L | coda_1 |  L | i_seq 
+coda_1: M | D S | S D| D | R  | S  | N
+i_seq: I N | I R | I M | I S   
+
+E: "eee" | "ee" | "e" 
+D: "d"
+M: "m"
+O: "o"
+S: "s"
+R: "r"
+L: "l"
+N: "n"
+I: "iii" | "ii" | "i"
+Q: "q"

@@ -1,0 +1,54 @@
+
+start: bodies | bodies coda
+
+
+bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3
+            
+
+r1: PREF_Y  bench_e oayu |  PREF_Y  BENCH oayu | bench_e oayu | BENCH oayu | S O  |  Q O | oay 
+
+oayu: O | Y | u
+
+PREF_Y: "y"
+
+r2:  L gall_bench | gall_bench  | S gall oay | D gall oay  | dlrs bench_e oayu  | dlrs BENCH oayu 
+
+gall_bench: gall bench_e oayu | gall BENCH oayu | gall_e oayu  | gall oay  |  BG u
+
+dlrs: D | L | R | S
+dlr: D | L | R
+
+// 'so' is a rank1 syllable
+r3:  dlrs E oay| dlrs Y | dlr O | dlrs D Y  | E oay
+
+
+coda: L coda_1 L |  L coda_1 | coda_1 L | coda_1 |  L | i_seq 
+coda_1: M | D S | S D| D | R  | S  | N
+i_seq: I N | I R | I M | I S   
+
+
+oay: O | Y
+Y: "y" | "a"
+
+u: U  | 
+U: "xxx"
+
+gall: G | BG
+G: "t" | "p" | "f" | "k"
+BG: "cth" | "cph" | "cfh" | "ckh"
+
+BENCH: "ch" | "sh"
+bench_e.100: BENCH E
+gall_e.100: gall E
+
+
+E: "eee" | "ee" | "e" 
+D: "d"
+M: "m"
+O: "o"
+S: "s"
+R: "r"
+L: "l"
+N: "n"
+I: "iii" | "ii" | "i"
+Q: "q"

@@ -8,7 +8,7 @@ bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3
 r1: "cheeo" | "chee" yu | "cheo" | "che" yu | "cho" | "ch" yu |"qo" | "o" |  Y | "shee" yu  | "sheo" 
     | "she" yu | "sho" | "sh" yu | "so"
 
-r2: "ckhe" yu | "ckh" yu | "cthe" yu | "ctho" | "cth" yu | "do" | "lo" | "ro" | "s" Y | "ee" yu | "kche" yu | "kcho" | "kch" yu | "keee" yu | "keeo" | "kee" yu | "keo" | "ke" yu | "ko" | "kshe" yu | "ksh" yu | "k" Y | "lche" yu | "lch" yu | "lkee" yu | "lk" Y | "lshe" yu | "pche" yu | "pcho" | "pch" yu | "po" | "p" Y | "tcheo" | "tche" yu | "tcho" | "tch" yu | "teeo" | "tee" yu | "teo" | "te" yu | "to" | "t" Y
+r2: "ckhe" yu | BG yu | "cthe" yu | BG O |  "do" | "lo" | "ro" | "s" Y | "ee" yu | "kche" yu | "kcho" | "kch" yu | "keee" yu | "keeo" | "kee" yu | "keo" | "ke" yu | G O | "kshe" yu | "ksh" yu | G Y | "lche" yu | "lch" yu | "lkee" yu | "lk" Y | "lshe" yu | "pche" yu | "pcho" | "pch" yu |  "tcheo" | "tche" yu | "tcho" | "tch" yu | "teeo" | "tee" yu | "teo" | "te" yu
 
 r3: "d" Y | "ld" Y | "l" Y | "r" Y
 
@@ -17,6 +17,9 @@ yu: Y | u
 
 u: U  | 
 U: "xxx"
+
+G: "t" | "p" | "f" | "k"
+BG: "cth" | "cph" | "cfh" | "ckh"
 
 
 coda: L coda_1 L |  L coda_1 | coda_1 L | coda_1 |  L | i_seq 

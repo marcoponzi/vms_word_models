@@ -2,7 +2,9 @@
 start: bodies | bodies coda
 
 
-bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3
+bodies:  r1 | r2 | r3 | r1 r2 | r1 r3  | r2 r3 | r1 r2 r3 
+         | r4 |r1 r4| r2 r4| r3 r4| r1 r2 r4| r1 r3  r4| r2 r3 r4| r1 r2 r3 r4 
+
             
 
 r1: PREF_Y  bench_e oayu |  PREF_Y  BENCH oayu | bench_e oayu | BENCH oayu | S O  |  Q O | oay 
@@ -19,7 +21,9 @@ dlrs: D | L | R | S
 dlr: D | L | R
 
 // 'so' is a rank1 syllable
-r3:  dlrs E oay| dlrs Y | dlr O | dlrs D Y  | E oay
+r3:  dlrs E oay|  dlr O |  E oayu
+
+r4:  dlrs Y  | dlrs D Y
 
 
 coda: L coda_1 L |  L coda_1 | coda_1 L | coda_1 |  L | i_seq 

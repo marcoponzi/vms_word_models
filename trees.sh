@@ -1,7 +1,7 @@
 mkdir -p images
 for w in $*
 do
-for gramm in grammar/EMS_V10.lark  grammar/Stolfi_reduced.lark
+for gramm in grammar/EMS_edited.lark  grammar/Stolfi_reduced.lark
 do
 gname=`echo $gramm | sed -e 's%.*/%%' | sed -e 's/_.*//'`
 echo $gname

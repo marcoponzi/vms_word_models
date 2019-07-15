@@ -7,7 +7,7 @@ bodies:  r0r1 | r2 | r3r4 | r0r1 r2 | r0r1 r3r4  | r2 r3r4 | r0r1 r2 r3r4
             
 r0r1: r0 | r1 | r0 r1
 r0: S O  |  Q O | oay
-r1: bench_e oayu |  r0  BENCH oayu | bench_e oayu | BENCH oayu 
+r1: bench_e oayu |  BENCH oayu 
 
 oayu: O | Y | u
 
@@ -23,7 +23,7 @@ dlr: D | L | R
 r3r4: r3 | r4 | r3 r4
 
 // 'so' is a rank1 syllable
-r3:  dlrs E oay|  dlr O |  E oayu
+r3:  dlrs E oayu |  dlr O |  E oayu
 
 r4:  dlrs Y  | dlrs D Y
 

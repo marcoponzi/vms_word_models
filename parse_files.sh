@@ -1,8 +1,8 @@
 mkdir -p out
 rm out/*
-for f in prob_obs_txt.n_word.frq_NO_bh.csv TT_freq.csv neg_king_james_36500.freq neg_TT_scrambled_no_vms_36500.freq
+for f in prob_obs_txt.n_word.frq_NO_bh.csv TT_freq.csv neg_king_james_36500.freq neg_TT_shifted_good_chars_no_vms_36500.freq
 do
-for gramm in grammar/EMS_V10.lark grammar/Stolfi_reduced.lark  grammar/NormalWord.grx.lark  
+for gramm in grammar/EMS_edited.lark grammar/Stolfi_reduced.lark grammar/NormalWord.grx.lark  
 do
   gname=`echo $gramm | sed -e 's%.*/%%' | sed -e 's/\..*//'`
   cat in/$f | python parse_with_lark.py $gramm | tee out/$gname$f

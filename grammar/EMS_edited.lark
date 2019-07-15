@@ -1,8 +1,10 @@
 
-start: bodies | bodies coda
+start: r0r1 | r2 | r3 | r0r1 r2  
+       | r0r1 coda | r2 coda |  r0r1 r2 coda 
+       | r0r1 r3  | r2 r3 | r0r1 r2 r3 
 
 
-bodies:  r0r1 | r2 | r3r4 | r0r1 r2 | r0r1 r3r4  | r2 r3r4 | r0r1 r2 r3r4  
+bodies:  
 
             
 r0r1: r0 | r1 | r0 r1
@@ -20,12 +22,12 @@ gall_bench: gall bench_e oayu | gall BENCH oayu | gall_e oayu  | gall oay  |  BG
 dlrs: D | L | R | S
 dlr: D | L | R
 
-r3r4: r3 | r4 | r3 r4
+r3: body3_oy | body3 body3_oy | body3 body3 body3_oy | body3 coda | body3 body3 coda | body3 body3 body3 coda
 
 // 'so' is a rank1 syllable
-r3:  dlrs E oayu |  dlr O |  E oayu
-
-r4:  dlrs Y  | dlrs D Y
+body3_oy:  dlrs E oay |  dlr O |  E oay |  dlrs Y  | dlrs D Y
+body3: dlrs E u | E u | body3_oy
+ 
 
 
 coda: L coda_1 L |  L coda_1 | coda_1 L | coda_1 |  L | i_seq 

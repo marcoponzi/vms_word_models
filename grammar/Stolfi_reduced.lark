@@ -78,11 +78,10 @@ BGALL: "cth" | "cph" | "ckh" | "cfh"
 G: "t" | "p" | "k" | "f" 
 
 
-// reduced 21 22 | "oe" | "oee" 
+// reduced 21  "oe" 
 //OE: "e" | "oe" 
 OE: "e" 
-//OEE: "ee" | "oee" 
-OEE: "ee" 
+OEE: "ee" | "oee" 
 
 // reduced 25 O CH
 OCH: CH | Y CH

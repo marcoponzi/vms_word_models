@@ -37,7 +37,7 @@ for line in sys.stdin:
 	    out_tree=lrk.parse(word)
 	    sys.stdout.write("SUCCESS:True " + word+" ")
 	    print(repr(out_tree).replace("Tree",""))
-	    fname="__"+word+"_"+gname+".png"
+	    fname=word+"_"+gname+".png"
 	    print(fname)
 	    tree.pydot__tree_to_png( out_tree, fname)
 	    success+=int(count)

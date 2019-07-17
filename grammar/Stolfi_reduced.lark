@@ -18,9 +18,9 @@ crustsuff: crs optofinal
 // crs: | or | or or | or or or | or or or or
 crs: | or | or or   
 wholecrust: crw optofinal | Q crw optofinal 
-// reduced 1 2  27:| or or or
+// reduced 1 2 
 //crw: | or | or or | or or or | or or or or | or or or or or 
-crw: | or | or or  
+crw: | or | or or  | or or or
 
 // reduced 8 | "yq" | "oq" 
 // Q: "q" | "yq" | "oq"

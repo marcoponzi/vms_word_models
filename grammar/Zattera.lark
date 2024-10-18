@@ -1,0 +1,42 @@
+start:   r0_d |  r0_q |  r0_s |  r1_o |  r1_y |  r2_l |  r2_r |  r3_tpkf |  r4_ch |  r4_sh |  r5_b_tpk |  r7_d |  r8_a 
+r0_d:  D_TOK r4_ch | D_TOK r4_sh 
+r0_q:  Q_TOK r1_o 
+r0_s:  S_TOK r4_ch 
+r1_o:  O_TOK r2_r | O_TOK r3_tpkf | O_TOK r4_ch | O_TOK r5_b_tpk | O_TOK r6_eb | O_TOK r7_d | O_TOK r8_a 
+r1_y:  Y_TOK r3_tpkf | Y_TOK r4_ch | Y_TOK r4_sh 
+r2_l:  L_TOK r3_tpkf | L_TOK r4_ch | L_TOK r4_sh 
+r2_r:  R_TOK r8_a 
+r3_tpkf:  R3TOK_TKPF r4_ch | R3TOK_TKPF r6_eb | R3TOK_TKPF r8_a | R3TOK_TKPF r8_o | R3TOK_TKPF r11_y 
+R3TOK_TKPF:  "t" | "p" | "k" | "f" 
+r4_ch:  CH_TOK r6_eb | CH_TOK r8_a | CH_TOK r8_o | CH_TOK r10_d | CH_TOK r11_y 
+r4_sh:  SH_TOK r6_eb | SH_TOK r8_o 
+r5_b_tpk:  R5TOK_BENCHEDTPK r6_eb | R5TOK_BENCHEDTPK r8_a | R5TOK_BENCHEDTPK r8_o 
+R5TOK_BENCHEDTPK:  "cth" | "cph" | "ckh" 
+r6_eb:  R6TOK_EE r7_s | R6TOK_EE r8_o | R6TOK_EE r10_d | R6TOK_EE r11_y | R6TOK_EE  
+R6TOK_EE:  "eee" | "ee" | "e" 
+r7_d:  D_TOK r8_a | D_TOK r8_o 
+r7_s:  S_TOK  
+r8_a:  A_TOK r9_ij | A_TOK r10_l | A_TOK r10_m | A_TOK r10_n | A_TOK r10_r 
+r8_o:  O_TOK r10_d | O_TOK r10_l | O_TOK r10_r | O_TOK  
+r9_ij:  R9TOK_IJ r10_n | R9TOK_IJ r10_r 
+R9TOK_IJ:  "ii" | "i" 
+r10_d:  D_TOK r11_y | D_TOK  
+r10_l:  L_TOK r11_y | L_TOK  
+r10_m:  M_TOK  
+r10_n:  N_TOK  
+r10_r:  R_TOK  
+r11_y:  Y_TOK  
+A_TOK: "a"
+D_TOK: "d"
+L_TOK: "l"
+M_TOK: "m"
+N_TOK: "n"
+O_TOK: "o"
+P_TOK: "p"
+Q_TOK: "q"
+R_TOK: "r"
+S_TOK: "s"
+Y_TOK: "y"
+CH_TOK: "ch"
+SH_TOK: "sh"
+
